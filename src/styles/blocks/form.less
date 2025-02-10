@@ -1,0 +1,48 @@
+.form{
+    &__list{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 30px 60px;
+    }
+    &__field {
+       width: 100%;
+       &--w50{
+          width: calc(50% - 30px);
+          @media @bw1170 {
+             width: calc(50% - 15px);
+          }
+          @media @bw600 {
+             width: 100%;;
+          }
+       }
+       &--mb30{
+          margin-bottom: 30px;
+       }
+       &--mb50{
+          margin-bottom: 50px;
+       }
+    }
+    &__group {
+       width: 100%;
+       &--w50{
+          width: calc(50% - 30px);
+       }
+    }
+    &__title {
+       display: block;
+       margin: 0 0 10px;
+       color: @black;
+       font-weight: 700;
+       font-size: 18px;
+       line-height: 25px;
+    }
+    &__buttons{
+       margin-top: 10px;
+       display: flex;
+       align-items: center;
+       @media @bw500 {
+          flex-direction: column;
+          gap: 30px;
+       }
+    }
+ }

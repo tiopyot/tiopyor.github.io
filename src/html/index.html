@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "ru" >
+   @@include('blocks/head.html')
+   <body class = "body">
+      @@include('blocks/page-header.html')
+      <main class = "main">
+         <div class = "center-block">       
+               <p class = "center-block__element-1">АРТ-ПРОСТРАНСТВО</p>
+               <picture class="center-block__logo">
+                  <img src="assets/images/central_logo.svg" alt="logo" class="center-block__img">
+                </picture>
+               <p class = "center-block__element-2">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ <br/> 
+                  МЕСТО ДЛЯ НАСТОЯЩЕГО</p>
+         </div>
+         <section class = "section">
+            <p class = "section__center">Я ХОЧУ:</p>
+            <div class = "section__bottom">
+               <p class = "btn section__value-1">Провести мероприятие</p>
+               <p class = "btn section__value-2">Стать арендатором</p>
+            </div>   
+         </section>
+         <h1 class="center-block__title section-title">О НАС</h1>
+         @@include('blocks/aboutus.html')
+         @@include('blocks/contacts.html')
+         @@include(('blocks/doit.html'), {"class": "home__doit"})
+      </main>
+      
+      @@include('blocks/page-footer.html')
+      @@include('blocks/event-pp.html')
+      <script defer src="scripts/main.min.js"></script>
+   </body>
+</html>

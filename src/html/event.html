@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="styles.css" /> <!--rel указывает что значит ссылка-->
+      <title>Lenni Art</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+   </head>
+   <body class = "body">
+      <header class = "page-header">
+         <div class = "page-header__container">
+            <a href="#" class="page-header__logo">
+               <svg class="page-header__logo-icon" width="202" height="147">
+               	   <use xlink:href="assets/icons/symbols.svg#logo"></use>
+               </svg>
+            </a>
+               
+            <nav class = "page-header__nav">
+               <a hrev = '#' class = "page-header__nav-link">Мероприятия</a>
+               <a hrev = '#' class = "page-header__nav-link">Блог</a>
+               <a hrev = '#' class = "page-header__nav-link">О нас</a>
+               <a href = "#" class="page-header__nav-link">Контакты</a>
+            </nav> 
+            <div class="page-header__right-block">
+               <a href="#" class="btn page-header__user-btn">Войти</a>
+            </div>
+         </div>
+         
+      </header>
+      <main class = "main">
+         <article>
+            <form class = "reserve">
+               <div class="reserve_checkbox"></div>
+                  checkbox
+               <div class="reserve_scheme"></div>
+                  scheme
+               <div class="reserve_order"></div>
+                  order
+               <div class="reserve_legend"></div>
+               legend
+            </form>
+         </article>
+      </main> 
+
+      @@include('blocks/page-footer.html')
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html land = "ru">
+   @@include('blocks/head.html')
+   <body class = "body">
+      @@include('blocks/page-header.html')
+      <main class = "main">
+         <div class="blog">
+            <section class="listing blog__listing">
+              <h2 class="blog__title section-title">Блог</h2>
+          
+              <div class="listing__blog-list">
+                <!-- prettier-ignore -->
+                @@loop('blocks/blog-card.html', [
+                  {
+                    "class": "listing__blog-card",
+                    "time": "26.11.2022",
+                    "datetime": "2022-26-11",
+                    "img": "assets/images/blog/theatre.jpg",
+                    "alt": "theatre",
+                    "title": "Фотосессия в стенах Театра драмы",
+                    "descr": "Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было."
+                  },
+                  {
+                     "class": "listing__blog-card",
+                     "time": "05.11.2022",
+                     "datetime": "2022-05-11",
+                     "img": "assets/images/blog/VR.jpg",
+                     "alt": "VR",
+                     "title": "Выставка VR в Томске",
+                     "descr": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске."
+                  },
+                  {
+                     "class": "listing__blog-card",
+                     "time": "01.11.2022",
+                     "datetime": "2022-11-01T20:00",
+                     "img": "assets/images/blog/radio.jpg",
+                     "alt": "radio",
+                     "title": "Rocking radio в заброшенном ангаре",
+                     "descr": "15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска."                  
+                   }
+                ])
+              </div>
+         
+         </section>    
+         
+         @@include('blocks/info.html') 
+   </div>    
+      @@include('blocks/page-footer.html')
+      @@include('blocks/event-pp.html')
+   </body>
+</html>
